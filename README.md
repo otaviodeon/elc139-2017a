@@ -1,4 +1,4 @@
-# Programação Paralela - ELC117-2016a
+# Programação Paralela - ELC139-2016a
 Primeiro semestre de 2016  
 Professora: [Andrea Schwertner Charão](http://www.inf.ufsm.br/~andrea)  
 Carga horária: 60h  
