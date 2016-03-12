@@ -1,1 +1,10 @@
-# elc139-2016a
+# Programação Paralela - ELC117-2016a
+Primeiro semestre de 2016
+Professora: [Andrea Schwertner Charão](http://www.inf.ufsm.br/~andrea)  
+Carga horária: 60h  
+Horários: terças e quintas, das 10:30 às 12:30  
+Sala: 363, CT
+
+
+## Trabalhos
+ - [TOP500 & me: comparativo de arquiteturas paralelas] (trabalhos/t1) (entrega até terça, 15/03/2016, 9h)
