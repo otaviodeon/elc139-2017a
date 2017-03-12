@@ -1,4 +1,4 @@
-[Programação Paralela](https://github.com/AndreaInfUFSM/elc139-2016a) > Trabalhos
+[Programação Paralela](https://github.com/AndreaInfUFSM/elc139-2017a) > Trabalhos
 
 T1: TOP500 & me - Comparativo de Arquiteturas Paralelas
 -------------------------------------------------------
