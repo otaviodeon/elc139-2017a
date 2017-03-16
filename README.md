@@ -7,7 +7,7 @@ Sala: 363, CT
 
 
 ## Trabalhos
- - [TOP500 & me: comparativo de arquiteturas paralelas] (trabalhos/t1) (entrega até terça, 14/03/2016, 9h)
+ - [TOP500 & me: comparativo de arquiteturas paralelas](trabalhos/t1) (entrega até terça, 14/03/2016, 9h)
  
 <!--
  - [Experiências com profilers] (trabalhos/t2) (entrega até quarta, 23/03/2016, 23h59)
