@@ -14,8 +14,8 @@ Para isso, consulte a documentação do cliente Git que você estiver usando. Se
    git fetch upstream
    git merge upstream/master master
    ```
-  Obs.: o primeir comando liga seu repositório local com o repositório remoto original da disciplina. Você só fará isso uma vez. 
-  Para os outros trabalhos, basta fazer fetch e merge.
+   Obs.: o primeir comando liga seu repositório local com o repositório remoto original da disciplina. Você só fará isso uma vez. 
+   Para os outros trabalhos, basta fazer fetch e merge.
   
 3. Abra o programa [dotprod_seq.c](dotprod_seq/dotprod_seq.c), que contém o código fonte de um programa simples para calcular o produto escalar de 2 vetores. 
 Este programa permite configurar o tamanho dos vetores e o número de repetições do cálculo, para variar a carga de trabalho.
