@@ -11,7 +11,7 @@
 Para isso, consulte a documentação do cliente Git que você estiver usando. Se estiver usando git via linha de comando, faça assim:
 
    ```
-   git remote add upstream https://github.com/AndreaInfUFSM/elc139-2016a.git
+   git remote add upstream https://github.com/AndreaInfUFSM/elc139-2017a.git
    git fetch upstream
    git merge upstream/master master
    ```
