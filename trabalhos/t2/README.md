@@ -9,7 +9,6 @@
 
 2. Faça fetch e merge do repositório original da disciplina para obter os arquivos necessários para o trabalho. 
 Para isso, consulte a documentação do cliente Git que você estiver usando. Se estiver usando git via linha de comando, faça assim:
-
    ```
    git remote add upstream https://github.com/AndreaInfUFSM/elc139-2017a.git
    git fetch upstream
