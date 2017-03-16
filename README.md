@@ -17,3 +17,10 @@ Sala: 363, CT
  - [Ray-tracer paralelo com MPI] (trabalhos/t6) (entregas parciais até as aulas dos dias 31/05 e 02/06; entrega final até dia 06/06, 23:59)
 -->
 
+
+## Sobre a disciplina
+ - [Ementa](http://www.inf.ufsm.br/index/graduacao/cc/ELC%20139%20PRG%20Programacao%20Paralela.pdf)
+ - Avaliação: 
+   - Instrumentos: trabalhos realizados e apresentados/discutidos em aula
+   - Peso de cada trabalho proporcional ao tempo para realizá-lo
+   - Participação na aula subsequente a cada entrega faz parte da avaliação
