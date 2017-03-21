@@ -1,9 +1,9 @@
 # GNU Makefile
 
 CC = gcc 
-#CFLAGS = -Wall -std=c99 -pg
+#CFLAGS = -Wall -std=c99
 CFLAGS = -Wall -std=c99 -pg
-TARGET = dotprod_seq
+TARGET = max_subarray
 
 all: $(TARGET)
 
