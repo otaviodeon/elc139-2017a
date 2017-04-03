@@ -107,7 +107,7 @@ int main(int argc, char **argv)
    }
 
    //nthreads = atoi(argv[1]);
-   nthreads = 1;
+   nthreads = 2;
    wsize = atoi(argv[1]);  // worksize = tamanho do vetor de cada thread
    repeat = atoi(argv[2]); // numero de repeticoes dos calculos (para aumentar carga)
 
@@ -121,9 +121,11 @@ int main(int argc, char **argv)
    dotdata.repeat = repeat;
 
    // Calcula c = a . b em nthreads, medindo o tempo
-   start_time = wtime();
+   //start_time = wtime();
+   start_time = omp_get_wtime();
    dotprod_worker();
-   end_time = wtime();
+   end_time = omp_get_wtime();
+   //end_time = wtime();
 
    // Mostra resultado e estatisticas da execucao
    printf("%f\n", dotdata.c);

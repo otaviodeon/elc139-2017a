@@ -59,7 +59,7 @@ A diferença entre os programas é que o segundo não utiliza exclusão mútua (
 ## OpenMP
 
 **Implemente um programa equivalente a [pthreads_dotprod.c] usando OpenMP. Avalie o desempenho do programa em OpenMP, usando os mesmos dados/argumentos do programa com threads POSIX.**<br/>
-
+Foi avaliado o programa *omp_dotprod* utilizando OpenMP. Não foi possível determinar com exatidão os tempos de execução, mas foram visivelmente mais curtos.
 
 
 ## Referências
