@@ -8,22 +8,25 @@ Aluno: Otávio Oliveira Deon
 ## Pthreads
 
 **Explique como se encontram implementadas as 4 etapas de projeto: particionamento, comunicação, aglomeração, mapeamento (use trechos de código para ilustrar a explicação).** <br/>
-O particionamento é feito de acordo com o número de threads que o programa vai executar, criando "limites" nos vetores. A função *dotprod_worker* tem como parâmetro o número da thread que está usando-a. Assim, a primeira thread irá lidar com os vetores em certa região, calculada com as variáveis *start* e *end*. No código: <br/>
+O particionamento é feito de acordo com o número de threads que o programa vai executar, criando "limites" nos vetores. A função *dotprod_worker* tem como parâmetro o número da thread que está usando-a. Assim, a primeira thread irá lidar com os vetores em certa região, calculada com as variáveis *start* e *end*. No código: 
 ```
 long offset = (long) arg;
 int start = offset*wsize;
 int end = start + wsize;
-``` <br/>
-A comunicação evita que resultados errados sejam obtidos devido à má sincronização das variáveis alteradas pelas threads. No caso, a variável *dotdata.c* é alterada com exclusão mútua para evitar que, por exemplo, uma thread altere a variável e logo depois outra thread use o valor antigo dela. No código: <br/>
+``` 
+
+A comunicação evita que resultados errados sejam obtidos devido à má sincronização das variáveis alteradas pelas threads. No caso, a variável *dotdata.c* é alterada com exclusão mútua para evitar que, por exemplo, uma thread altere a variável e logo depois outra thread use o valor antigo dela. No código: 
+
 ```
 pthread_mutex_lock (&mutexsum);
 dotdata.c += mysum;
 pthread_mutex_unlock (&mutexsum);
-``` <br/>
-Na aglomeração junta-se os valores das somas de cada thread na variável *c* de *dotdata*. O resultado final é a soma das somas parciais das threads. No código: <br/>
+``` 
+Na aglomeração junta-se os valores das somas de cada thread na variável *c* de *dotdata*. O resultado final é a soma das somas parciais das threads. No código:
 ```
 dotdata.c += mysum;
-``` <br/>
+``` 
+
 O mapeamento, mostrado no código abaixo, cria as threads passando o "número" de cada thread como argumento, e depois realiza as junções. 
 
 ```
@@ -33,8 +36,7 @@ for (i = 0; i < nthreads; i++) {
 for (i = 0; i < nthreads; i++) {
    pthread_join(threads[i], NULL);
 }
-``` <br/>
-
+```
 	
 **Considerando o tempo (em segundos) mostrado na saída do programa, qual foi a aceleração com o uso de threads?** <br/>
 A execução sequencial (1 thread) levou 7629358 usecs. A execução com 2 threads levou 5404262 usec. Logo, a aceleração com o uso de threads foi de aproximadamente **1.41173**.
