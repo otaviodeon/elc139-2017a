@@ -62,5 +62,6 @@ A diferença entre os programas é que o segundo não utiliza exclusão mútua (
 
 ## Referências
 
-https://computing.llnl.gov/tutorials/openMP/
-https://hpc.llnl.gov/training/tutorials
+https://computing.llnl.gov/tutorials/openMP/ __
+https://hpc.llnl.gov/training/tutorials __
+http://www.openmp.org/wp-content/uploads/omp-hands-on-SC08.pdf
