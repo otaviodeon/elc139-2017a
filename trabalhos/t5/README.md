@@ -8,7 +8,7 @@
 
 O termo ["método de Monte Carlo"](https://en.wikipedia.org/wiki/Monte_Carlo_method) refere-se a uma abordagem para calcular soluções aproximadas para problemas numéricos em diversas áreas. A principal característica deste tipo de método é o emprego de amostras de números aleatórios (ou pseudo-aleatórios) para representar valores de variáveis envolvidas em algum fenômeno. Em geral, as aplicações do método de Monte Carlo são computacionalmente intensivas, pois é necessário repetir experimentos com diversas amostras de números para se fazer alguma análise estatística.
 
-<img src="fire.png" height="145px" align="right">
+<img src="fire.png" height="160px" align="right">
 
 A aplicação escolhida para este trabalho utiliza um método de Monte Carlo para simular **incêndios em florestas**. Esta aplicação utiliza um modelo simples em que o fogo se propaga de uma árvore para outra com uma dada probabilidade. A cada execução da aplicação, realiza-se vários experimentos com diferentes probabilidades de propagação do fogo. Na saída, tem-se o percentual de árvores queimadas para cada probabilidade de propagação considerada. Na figura ao lado, é ilustrada a propagação para uma única probabilidade (imagem meramente ilustrativa, pois o programa a ser paralelizado não tem interface gráfica).
 
