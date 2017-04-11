@@ -1,0 +1,27 @@
+[Programação Paralela](https://github.com/otaviodeon/elc139-2017a) > Trabalhos
+
+# T2: Experiências com Profilers
+
+Disciplina: Programação Paralela (ELC139)
+Aluno: Otávio Oliveira Deon
+
+## PARTE 1
+
+Pergunta: **O perfil é afetado pelas opções de configuração?**
+Sim, a mudança dos parâmetros implica em execuções diferentes, e consequentemente são gerados perfis diferentes. As diferenças sempre estão relacionadas com o tempo de execução do programa. A visualização da árvore de execução gerada também muda, pois ela é ordenada pelo tempo gasto em cada função. Por exemplo, com a entrada [300000, 10], a função init-vectors teve tempo desprezível, ficando abaixo da função wtime na árvore. Já com a entrada [3000000, 10], a função init-vectors tomou mais tempo (24% do tempo do programa).
+Pergunta: **Pelo perfil de execução, há alguma função que poderia ser candidata a paralelização? Por quê?**
+Sim, a escolha óbvia seria a função dot_product. Nas diferentes execuções do programa, essa função sempre é a que tem maior porcentagem de tempo de execução, mesmo sendo chamada apenas uma vez. Caso fosse alterada de forma a ser processada paralelamente, o profiling do programa poderia ter mudanças consideráveis devido a um menor tempo de execução.
+
+## PARTE 2	
+
+**Observações:**
+Outro profiler escolhido foi o Callgrind/KCacheGrind. Callgrind é uma ferramenta semelhante ao Valgrind. Para fazer o profiling, o Callgrind faz com que o programa-alvo seja transformado numa linguagem intermediária e rodado num processador virtual emulado pelo valgrind (ver referência). Como consequência, há bastante overhead (o programa pode levar de 10 a 50 vezes mais tempo para ser executado do que sem o profiler). O KCacheGrind é usado para visualizar as informações do profiling.
+A instalação foi simples e rápida (as aplicações fazem parte de pacotes da distribuição Linux usada para o trabalho). 
+A execução do profiler permite diferentes parâmetros. Eles podem ser relativos ao formato da saída das informações, execução de ações no meio do profiling (por exemplo, agir ao entrar ou sair de certa função do programa), etc.
+
+## REFERÊNCIAS
+
+https://baptiste-wicht.com/posts/2011/09/profile-c-application-with-callgrind-kcachegrind.html
+http://valgrind.org/docs/manual/cl-manual.html
+https://web.stanford.edu/class/cs107/guide_callgrind.html
+
