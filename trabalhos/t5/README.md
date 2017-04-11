@@ -33,11 +33,12 @@ Devido ao número de experimentos, uma execução desta aplicação pode consumi
 
 No seu repositório da disciplina, na pasta `trabalhos/t5`, crie um documento `Entrega.md`, contendo:
  - Identificação completa da disciplina e do(s) aluno(s);
- - Descrição das estratégias de paralelização adotadas e link para os códigos desenvolvidos.
- - Dados de desempenho e análise dos resultados.
+ - Links para os códigos desenvolvidos;
+ - Link para **slides** explicando as estratégias de paralelização adotadas, descrevendo os experimentos realizados e discutindo os resultados obtidos;
  - Referências.
 
 **Atenção:** Trabalhos feitos em dupla deverão constar nos repositórios de ambos os integrantes, do contrário serão avaliados como trabalhos individuais.
+
 
 
 ## Material de apoio
