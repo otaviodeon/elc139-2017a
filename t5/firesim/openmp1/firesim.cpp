@@ -75,7 +75,7 @@ main(int argc, char* argv[])
          rand.setSeed(base_seed+ip); // nova seq��ncia de n�meros aleat�rios
 
          // executa v�rios experimentos
-         #pragma omp parallel for private(forest)
+         #pragma omp parallel for private(forest) 
          for (int it = 0; it < n_trials; it++) {
              forest = new Forest(forest_size);
             // queima floresta at� o fogo apagar
