@@ -44,7 +44,7 @@ Resultados (tempos em segundos): <br><br>
 ...                 | **30 1000 100** | **100 100 100** | **30 50 100**
 ---|---|---|---
 **Média-sequencial**|31.97469|81.78550|1.584490
-**Variância-sequencial**|4.073889|81.78550 segundos|0.410700
+**Variância-sequencial**|4.073889|1.561540|0.410700
 **Desvio-padrão-sequencial**|2.018388|1.249616|0.06408
 **Média-4 threads**|25.75408| 48.74671|1.101836
 **Variância-4 threads**|5.647840|5.014229|0.482665
