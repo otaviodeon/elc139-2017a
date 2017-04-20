@@ -56,7 +56,8 @@ main(int argc, char* argv[])
 
       start_time = wtime();
 
-      Forest *forest = new Forest(forest_size);
+      //Forest *forest = new Forest(forest_size);
+      Forest *forest;
       Random rand;
 
       prob_spread = new double[n_probs];
@@ -76,6 +77,7 @@ main(int argc, char* argv[])
          // executa v�rios experimentos
          #pragma omp parallel for private(forest)
          for (int it = 0; it < n_trials; it++) {
+             forest = new Forest(forest_size);
             // queima floresta at� o fogo apagar
             forest->burnUntilOut(forest->centralTree(), prob_spread[ip], rand);
             percent_burned[ip] += forest->getPercentBurned();
