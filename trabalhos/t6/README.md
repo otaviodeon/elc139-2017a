@@ -36,13 +36,14 @@ Esta parte do trabalho não precisa ser entregue. Seu objetivo é apenas exercit
 + Considerando a metodoogia vista na aula sobre o projeto de programas paralelos, explique como se dá o particionamento, a comunicação, a aglomeração e o mapeamento neste programa.
 
 + Compile o programa e execute-o nas configurações abaixo, cuidando para que não haja interferência significativa nas medições. Registre o tempo de execução e calcule o speedup obtido nos casos B, C, D e E (para simplificar, considere o caso A como uma execução sequencial).
+
  | Caso | Tamanho do vetor | Repetições | Num. de Processos | Host |
- | ------ | ----------------- | ------------ | ------------------- | ----- |
- | A | 30000000 | 100 | 1 | lsc4 OU lsc5 |
- | B | 30000000 | 100 | 2 | lsc4 OU lsc5 |
- | C | 30000000 | 100 | 2 | lsc4 E llsc5 |
- | D | 30000000 | 100 | 4 | lsc4 OU lsc5 |
- | E | 30000000 | 100 | 4 | lsc4 E lsc5 |
+ | ---- | ---------------- | ---------- | ----------------- | ---- |
+ | A    | 30000000 | 100 | 1 | lsc4 OU lsc5 |
+ | B    | 30000000 | 100 | 2 | lsc4 OU lsc5 |
+ | C    | 30000000 | 100 | 2 | lsc4 E lsc5 |
+ | D    | 30000000 | 100 | 4 | lsc4 OU lsc5 |
+ | E    | 30000000 | 100 | 4 | lsc4 E lsc5 |
 
 
 ## Parte 2
@@ -67,5 +68,5 @@ No seu repositório da disciplina, na pasta `trabalhos/t6`, crie um documento `E
 ## Material de apoio
 
 
-- [Tutorial OpenMP](https://computing.llnl.gov/tutorials/openMP/)  
-  Tutorial do Lawrence Livermore National Laboratory (LLNL) sobre OpenMP.
+- [Tutorial MPI](https://computing.llnl.gov/tutorials/mpi/)  
+  Tutorial do Lawrence Livermore National Laboratory (LLNL) sobre MPI.
