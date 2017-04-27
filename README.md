@@ -12,6 +12,8 @@ Sala: 363, CT
  - [Programação paralela multithread](trabalhos/t3) (entrega até segunda, 03/04, 23h59)
  - [Bug em OpenMP](trabalhos/t4) (entrega até segunda, 10/04, 23h59)
  - [Aplicação do método de Monte Carlo em OpenMP](trabalhos/t5) (entrega até quarta, 19/04, 23h59 - apresentação quinta, 20/04)
+ - [Experiências com MPI](trabalhos/t6) (entrega até segunda, 02/05, 23h59)
+
 <!--
  - [Experiências com profilers] (trabalhos/t2) (entrega até quarta, 23/03/2016, 23h59)
  - [Programação paralela multithread] (trabalhos/t3) (entrega até segunda, 04/04/2016, 23h59)
