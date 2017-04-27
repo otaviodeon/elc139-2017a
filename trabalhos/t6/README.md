@@ -37,13 +37,13 @@ Esta parte do trabalho não precisa ser entregue. Seu objetivo é apenas exercit
 
 + Compile o programa e execute-o nas configurações abaixo, cuidando para que não haja interferência significativa nas medições. Registre o tempo de execução e calcule o speedup obtido nos casos B, C, D e E (para simplificar, considere o caso A como uma execução sequencial).
 
- | Caso | Tamanho do vetor | Repetições | Num. de Processos | Host |
- | ---- | ---------------- | ---------- | ----------------- | ---- |
- | A    | 30000000 | 100 | 1 | lsc4 OU lsc5 |
- | B    | 30000000 | 100 | 2 | lsc4 OU lsc5 |
- | C    | 30000000 | 100 | 2 | lsc4 E lsc5 |
- | D    | 30000000 | 100 | 4 | lsc4 OU lsc5 |
- | E    | 30000000 | 100 | 4 | lsc4 E lsc5 |
+  | Caso | Tamanho do vetor | Repetições | Num. de Processos | Host |
+  | ---- | ---------------- | ---------- | ----------------- | ---- |
+  | A    | 30000000 | 100 | 1 | lsc4 OU lsc5 |
+  | B    | 30000000 | 100 | 2 | lsc4 OU lsc5 |
+  | C    | 30000000 | 100 | 2 | lsc4 E lsc5 |
+  | D    | 30000000 | 100 | 4 | lsc4 OU lsc5 |
+  | E    | 30000000 | 100 | 4 | lsc4 E lsc5 |
 
 
 ## Parte 2
