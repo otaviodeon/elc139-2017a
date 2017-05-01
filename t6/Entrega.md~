@@ -1,0 +1,27 @@
+[Programação Paralela](https://github.com/otaviodeon/elc139-2017a) > Trabalhos
+
+# T6: Experiências com MPI
+Disciplina: Programação Paralela <br>
+Aluno: Otávio Oliveira Deon <br>
+Computador utilizado:  Os testes foram realizados utilizando um processador Intel Core i5-4200U, possuindo 2 núcleos, 4 threads, e frequência de 1.6GHz ou 2.6GHz. <br>
+
+## Parte 1
+Particionamento:
+Comunicação:
+Aglomeração:
+Mapeamento:
+<br>
+Tempos de execução (média): <br>
+Caso A (lsc4): 15553888 usec (15,5s). <br>
+Caso B (lsc4): 7907604 usec (7,9s). Speedup de 1.96695. <br>
+Caso C: 
+Caso D (lsc4): 4163840 usec (4,16s). Speedup de 3.73546. <br>
+Caso E:
+
+<br>
+## Parte 2
+No programa *mpi_errado1.c*, o erro está na definição da tag ao enviar/receber as mensagens. Como a variável tag recebe o valor de rank (linhas 27 e 36), apesar do processo 0 mandar a mensagem pro processo 1, este não a recebe pois a tag na sua função MPIRecv tem valor 1, diferente do esperado. O processo 1 então fica esperando receber a mensagem do processo 0, sem sucesso, e não executa mais nada. Mesmo se mandasse alguma mensagem pro processo 0, este não a receberia, pois esperaria uma tag 0. A solução é tratar adequadamente as tags, dando o valor de 0 para todas, por exemplo, ou usar MPIANYTAG. <br>
+Em *mpi_errado2.c*, o erro está em não chamar a função MPI_Finalize() no fim dos processos. A solução é chamar a função no fim do código. 
+
+<br>
+## Referências
