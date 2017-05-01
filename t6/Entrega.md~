@@ -5,7 +5,7 @@ Disciplina: Programação Paralela <br>
 Aluno: Otávio Oliveira Deon <br>
 Computador utilizado:  Os testes locais foram realizados utilizando um processador Intel Core i5-4200U, possuindo 2 núcleos, 4 threads, e frequência de 1.6GHz ou 2.6GHz.
 
-<br>
+<br><br>
 ## Parte 1
 Particionamento:
 ```

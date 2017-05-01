@@ -45,14 +45,14 @@ Caso C:  <br>
 Caso D (lsc4): 4163840 usec (4,16s). Speedup de 3.73546. <br>
 Caso E:  <br>
 
-<br>
+<br><br>
 ## Parte 2
 Programa do MPI Pipeline disponível em *mpi_pipeline.c*. <br>
 No programa *mpi_errado1.c*, o erro está na definição da tag ao enviar/receber as mensagens. Como a variável tag recebe o valor de rank (linhas 27 e 36), apesar do processo 0 mandar a mensagem pro processo 1, este não a recebe pois a tag na sua função MPIRecv tem valor 1, diferente do esperado. O processo 1 então fica esperando receber a mensagem do processo 0, sem sucesso, e não executa mais nada. Mesmo se mandasse alguma mensagem pro processo 0, este não a receberia, pois esperaria uma tag 0. A solução é tratar adequadamente as tags, dando o valor de 0 para todas, por exemplo, ou usar MPIANYTAG. <br>
 Em *mpi_errado2.c*, o erro está em não chamar a função MPI_Finalize() no fim dos processos. A solução é chamar a função no fim do código. <br>
 As soluções estão em *mpi_certo1.c* e *mpi_certo2.c*. 
 
-<br>
+<br><br>
 ## Referências	
 https://computing.llnl.gov/tutorials/mpi/ <br>
 http://mpitutorial.com/tutorials/ 
