@@ -66,7 +66,7 @@ Neste trabalho, será utilizada uma versão do programa [MDCrack](http://c3rb3r.
 
 3. O programa deverá distribuir o trabalho de quebra das várias senhas entre os processos que fazem parte do `MPI_COMM_WORLD`. Cada processo deverá processar uma ou mais senhas. 
 
-4. O programa deve ser implementado segundo um modelo mestre-trabalhador, em que o processo mestre distribui as tarefas **dinamicamente** entre os processos trabalhadores ([Foster, seção 2.5](http://www-unix.mcs.anl.gov/dbpp/text/node19.html#figLB2])). Cada processo trabalhador deverá chamar o programa MDCrack quebrar cada senha fornecida.
+4. O programa deve ser implementado segundo um modelo mestre-trabalhador, em que o processo mestre distribui as tarefas **dinamicamente** entre os processos trabalhadores ([Foster, seção 2.5](http://www.mcs.anl.gov/~itf/dbpp/text/node19.html#figLB2)). Cada processo trabalhador deverá chamar o programa MDCrack para quebrar cada senha fornecida.
 
 5. O resultado da quebra de senhas deverá ser apresentado na mesma ordem em que as senhas se encontram no arquivo de entrada.
 
@@ -117,5 +117,5 @@ MD5 na Wikipedia.
 - [RFC 1321 The MD5 Message-Digest Algorithm](http://tools.ietf.org/html/rfc1321)  
 Referência oficial do algoritmo MD5, padronizado pela IETF (Internet Engineering Task Force).
 
-- [Message Passing Interface (MPI) - Lawrence Livermore National Laboratory http://www.llnl.gov/computing/tutorials/mpi/]{br}
+- [Message Passing Interface (MPI) - Lawrence Livermore National Laboratory](http://www.llnl.gov/computing/tutorials/mpi/)  
 Tutorial sobre MPI com vários exemplos.
