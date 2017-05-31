@@ -1,0 +1,23 @@
+[Programação Paralela](https://github.com/otaviodeon/elc139-2017a) > Trabalhos
+
+# T8: Quebra de senhas com OpenMPI
+Disciplina: Programação Paralela <br>
+
+Computador utilizado:  Os testes locais foram realizados utilizando um processador Intel Core i5-4200U, possuindo 2 núcleos, 4 threads, e frequência de 1.6GHz ou 2.6GHz.
+
+<br><br>
+# Código
+
+
+<br><br>
+# Estratégia
+
+
+<br><br>
+# Experimentos e resultados
+
+
+<br><br>
+# Referências
+https://computing.llnl.gov/tutorials/mpi/ <br>
+http://mpitutorial.com/tutorials/ 
