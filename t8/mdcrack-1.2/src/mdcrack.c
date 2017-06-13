@@ -923,10 +923,10 @@ int main (argc, argv)
        }
      
      
-     if (custom) 
+     /*if (custom) 
        mdmesg(18, alfa+1);
      else if (!hread)
-       mdmesg(19, alfa+1);
+       mdmesg(19, alfa+1);*/
      
      
      if (hread)

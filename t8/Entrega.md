@@ -1,5 +1,9 @@
 [Programação Paralela](https://github.com/otaviodeon/elc139-2017a) > Trabalhos
 
+<br>
+Aluno: Otávio Deon
+
+<br><br>
 # T8: Quebra de senhas com OpenMPI
 Disciplina: Programação Paralela <br>
 
@@ -7,14 +11,25 @@ Computador utilizado:  Os testes locais foram realizados utilizando um processad
 
 <br><br>
 # Código
-
+Disponível em *mdcrack-1.2/quebra.c*.
 
 <br><br>
 # Estratégia
-
+O método de paralelização do programa se baseia no formato mestre/trabalhadores. Um processo é o mestre e os outros tem a função de quebrar as senhas e retorná-las para o processo mestre. 
+Primeiramente, o mestre distrubui as primeiras senhas (criptografadas) para os trabalhadores. Após, o mestre fica sempre esperando o resultado retornado pelos trabalhadores, e quando recebe, faz uma das duas opções: manda outra senha para o trabalhador quebrar, ou, caso todas senhas já tenham sido mandadas, envia uma mensagem (de valor '9') que significa que o trabalhador já fez o que precisava e pode encerrar suas atividades. A lógica dos trabalhadores é simples: fica sempre esperando uma mensagem - caso tenha valor '9', ele encerra; caso contrário, chama o programa mdcrack com a mensagem recebida, e o resultado (senha descriptografada) é enviado de volta para o processo mestre. O mestre encerra suas atividades quando todos processos trabalhadores tiverem encerrado suas atividades (todas senhas foram quebradas). 
 
 <br><br>
 # Experimentos e resultados
+Experimentos utilizando o arquivo *crackme.txt*. 
+Médias de tempo: <br>
+Sequencial: 1592 segundos. <br>
+Com 3 processos: 1109 segundos. (Speedup de 1.43). <br>
+Com 4 processos: 936 segundos. (Speedup de 1.70). <br>
+Com 5 processos: 786 segundos. (Speedup de 2.02). <br>
+Com 8 processos: 721 segundos. (Speedup de 2.20). <br>
+
+Como esperado, mais processos fazem que o programa execute em menos tempo, pois há senhas (não necessariamente enormes) que levam muito tempo
+para serem quebradas - deixar que outros processos paralelamente quebrem outras senhas faz com que a execução final acabe mais rapidamente.
 
 
 <br><br>
