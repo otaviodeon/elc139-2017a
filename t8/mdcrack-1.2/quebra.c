@@ -12,7 +12,7 @@ char **lerSenhas(int *numSenhas) {
     char **senhas;    //vetor de strings (cada elemento eh uma senha criptografada)
     FILE *lote;
     int i=0;
-    lote = fopen("crackme.txt", "r");
+    lote = fopen("cme.txt", "r");
     if (lote == NULL)
          printf("Erro ao abrir o arquivo.\n");
     else {
@@ -65,10 +65,12 @@ int main(int argc, char **argv) {
            for (int i=nProcessos-1; i>nSenhas; i--) {
                msg[0] = '9';
                processosAcabados++;
+               //nProcessos--;
                MPI_Send(&msg, 33, MPI_BYTE, i, 0, MPI_COMM_WORLD);
                if (processosAcabados >= nProcessos-1)       //se todos trabalhadores morreram, mestre para também
                    break;
            }
+           //senhasEnviadas = nSenhas;
        }
 
        for (i=1; i<nProcessos; i++) {     //mestre distribui primeiras tarefas
